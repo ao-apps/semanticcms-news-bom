@@ -29,7 +29,6 @@ Bill of Materials (BOM) for [SemanticCMS News](https://github.com/aoindustries/s
 ## Managed Dependencies
 * [SemanticCMS News All](https://github.com/aoindustries/semanticcms-news-all)
 * [SemanticCMS News Model](https://github.com/aoindustries/semanticcms-news-model)
-* [SemanticCMS News Renderer HTML](https://github.com/aoindustries/semanticcms-news-renderer-html)
 * [SemanticCMS News RSS](https://github.com/aoindustries/semanticcms-news-rss)
 * [SemanticCMS News Servlet](https://github.com/aoindustries/semanticcms-news-servlet)
 * [SemanticCMS News Style](https://github.com/aoindustries/semanticcms-news-style)
