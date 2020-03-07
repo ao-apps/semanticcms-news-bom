@@ -37,7 +37,7 @@ along with semanticcms-news-bom.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2019-06-11T01:43:03-0500"
-		dateModified="2020-02-26T10:02:57-0600"
+		dateModified="2020-03-07T06:01:29-0600"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-news-bom:pom.version}" />
@@ -49,11 +49,15 @@ along with semanticcms-news-bom.  If not, see <http://www.gnu.org/licenses />.
 			<changelog:release
 				projectName="@{documented.name}"
 				version="#{version}"
-				groupId="@{documented.groupId}"
+				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
-				scmUrl="@{documented.scm.url}"
+				scmUrl="@{project.scm.url}"
 			>
 				<ul>
+					<li>
+						Reduced use of property substitutions in <code>pom.xml</code>.
+						This is to help 3rd-party parsers that fail to perform full Maven-compatible substitutions.
+					</li>
 					<li>Updated version of <core:link book="/news/all" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/news/rss" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/news/servlet" page="/index.jspx" />.</li>
@@ -68,9 +72,9 @@ along with semanticcms-news-bom.  If not, see <http://www.gnu.org/licenses />.
 			projectName="@{documented.name}"
 			version="1.3.0"
 			datePublished="2019-10-12T02:14:07-0500"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>Updated version of <core:link book="/news/all" page="/index.jspx" />.</li>
@@ -86,9 +90,9 @@ along with semanticcms-news-bom.  If not, see <http://www.gnu.org/licenses />.
 			projectName="@{documented.name}"
 			version="1.2.1"
 			datePublished="2019-06-22T08:23:24-0500"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>
