@@ -103,6 +103,25 @@ along with semanticcms-news-bom.  If not, see <http://www.gnu.org/licenses />.
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<!-- Report by versions:display-dependency-updates -->
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-lang</artifactId><version>4.3.1${POST-SNAPSHOT}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-filter</artifactId><version>2.2.0${POST-SNAPSHOT}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-last-modified</artifactId><version>1.1.0${POST-SNAPSHOT}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-taglib</artifactId><version>5.0.1${POST-SNAPSHOT}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>3.10</version>
+			</dependency>
+			<dependency>
+				<groupId>joda-time</groupId><artifactId>joda-time</artifactId><version>2.10.6</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>
