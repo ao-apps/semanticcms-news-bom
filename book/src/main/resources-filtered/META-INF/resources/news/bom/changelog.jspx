@@ -37,7 +37,7 @@ along with semanticcms-news-bom.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2019-06-11T01:43:03-0500"
-		dateModified="2020-03-29T12:01:43-05:00"
+		dateModified="2020-06-29T14:40:45-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-news-bom:pom.version}" />
@@ -52,7 +52,12 @@ along with semanticcms-news-bom.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
-			/>
+			>
+				<ul>
+					<li>Updated version of <core:link book="/news/all" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/news/rss" page="/index.jspx" />.</li>
+				</ul>
+			</changelog:release>
 		</c:if>
 
 		<changelog:release
