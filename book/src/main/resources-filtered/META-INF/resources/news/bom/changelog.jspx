@@ -37,7 +37,7 @@ along with semanticcms-news-bom.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2019-06-11T01:43:03-0500"
-		dateModified="2020-11-19T00:22:01-06:00"
+		dateModified="2020-11-26T03:21:48-06:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-news-bom:pom.version}" />
@@ -56,6 +56,7 @@ along with semanticcms-news-bom.  If not, see <http://www.gnu.org/licenses />.
 				<ul>
 					<li>Updated version of <core:link book="/news/all" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/news/servlet" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/news/style" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/news/taglib" page="/index.jspx" />.</li>
 				</ul>
 			</changelog:release>
