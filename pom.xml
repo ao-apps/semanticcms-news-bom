@@ -115,7 +115,7 @@ along with semanticcms-news-bom.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-rss</artifactId><version>1.6.2${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet</artifactId><version>1.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet</artifactId><version>1.7.0${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style</artifactId><version>1.4.1${POST-SNAPSHOT}</version>
@@ -143,7 +143,7 @@ along with semanticcms-news-bom.  If not, see <https://www.gnu.org/licenses/>.
         <scope>import</scope>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet</artifactId><version>1.7.0-SNAPSHOT</version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet</artifactId><version>1.7.0-POST-SNAPSHOT</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -214,7 +214,7 @@ along with semanticcms-news-bom.  If not, see <https://www.gnu.org/licenses/>.
       <exclusions><exclusion><artifactId>*</artifactId><groupId>*</groupId></exclusion></exclusions>
     </dependency>
     <dependency>
-      <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet</artifactId><version>1.7.0-SNAPSHOT</version>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet</artifactId><version>1.7.0-POST-SNAPSHOT</version>
       <type>pom</type>
       <exclusions><exclusion><artifactId>*</artifactId><groupId>*</groupId></exclusion></exclusions>
     </dependency>
