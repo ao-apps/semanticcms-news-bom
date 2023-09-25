@@ -37,9 +37,9 @@ along with semanticcms-news-bom.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2019-06-11T01:43:03-05:00"
-    dateModified="2023-09-18T03:16:04Z"
+    dateModified="2023-09-25T07:03:54Z"
   >
-    <c:set var="latestRelease" value="1.7.2" />
+    <c:set var="latestRelease" value="1.8.0" />
     <c:if test="${
       fn:endsWith('@{project.version}', '-SNAPSHOT')
       and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')
@@ -52,16 +52,25 @@ along with semanticcms-news-bom.  If not, see <https://www.gnu.org/licenses/>.
         artifactId="@{documented.artifactId}"
         repository="@{nexusUrl}content/repositories/snapshots/"
         scmUrl="@{project.scm.url}"
-      >
-        <ul>
-          <li>Updated version of <core:link book="/news/all" page="/" />.</li>
-          <li>Updated version of <core:link book="/news/model" page="/" />.</li>
-          <li>Updated version of <core:link book="/news/servlet" page="/" />.</li>
-          <li>Updated version of <core:link book="/news/taglib" page="/" />.</li>
-          <li>Updated version of <core:link book="/news/view" page="/" />.</li>
-        </ul>
-      </changelog:release>
+      />
     </c:if>
+
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.8.0"
+      datePublished="2023-09-25T07:03:54Z"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated version of <core:link book="/news/all" page="/" />.</li>
+        <li>Updated version of <core:link book="/news/model" page="/" />.</li>
+        <li>Updated version of <core:link book="/news/servlet" page="/" />.</li>
+        <li>Updated version of <core:link book="/news/taglib" page="/" />.</li>
+        <li>Updated version of <core:link book="/news/view" page="/" />.</li>
+      </ul>
+    </changelog:release>
 
     <changelog:release
       projectName="@{documented.name}"
