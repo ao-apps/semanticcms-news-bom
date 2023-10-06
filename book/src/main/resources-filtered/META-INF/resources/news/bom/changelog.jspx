@@ -37,7 +37,7 @@ along with semanticcms-news-bom.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2019-06-11T01:43:03-05:00"
-    dateModified="2023-09-25T07:03:54Z"
+    dateModified="2023-10-06T04:32:49Z"
   >
     <c:set var="latestRelease" value="1.8.0" />
     <c:if test="${
@@ -52,7 +52,11 @@ along with semanticcms-news-bom.  If not, see <https://www.gnu.org/licenses/>.
         artifactId="@{documented.artifactId}"
         repository="@{nexusUrl}content/repositories/snapshots/"
         scmUrl="@{project.scm.url}"
-      />
+      >
+        <ul>
+          <li><code>ElementTag.evaluateAttributes(…)</code> no longer throws <code>IOException</code>.</li>
+        </ul>
+      </changelog:release>
     </c:if>
 
     <changelog:release
